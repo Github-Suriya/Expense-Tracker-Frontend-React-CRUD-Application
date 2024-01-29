@@ -1,0 +1,39 @@
+.ref-btn {
+    padding: .5em 1em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 0, 128, 0.4);
+    font-weight: bolder;
+}
+   
+.ref-btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #00ffff;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+   
+.ref-btn:hover {
+    background-color: #f04c4c;
+    color: #fff;
+}
+   
+.ref-btn:hover::before {
+    transform: skewX(30deg) translate(200%, -50%);
+    transition-delay: 0.1s;
+}
+   
+.ref-btn:active {
+    transform: scale(0.9);
+}

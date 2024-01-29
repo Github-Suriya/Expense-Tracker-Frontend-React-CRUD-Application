@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 5;
+    padding-left: 5;
+}
+
+.title-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title-top h1 {
+    font-size: xx-large;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 255, 0.4);
+    display: block;
+}
+
+.add-trans {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.add-trans .btn {
+    padding: .5em 1em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 255, 0.4);
+    font-weight: bolder;
+}
+   
+.add-trans .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #fbff00;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+   
+.add-trans .btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+}
+   
+.add-trans .btn:hover::before {
+    transform: skewX(30deg) translate(200%, -50%);
+    transition-delay: 0.1s;
+}
+   
+.add-trans .btn:active {
+    transform: scale(0.9);
+}
+
+.expense-view {
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+}

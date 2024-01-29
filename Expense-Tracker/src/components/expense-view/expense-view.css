@@ -1,0 +1,37 @@
+.expense-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    background-color: white;
+    margin-right: 4px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid;
+    border-color: rgba(128, 128, 128, 0.1);
+    border-radius: 12px;
+}
+
+.expense-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-view h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p {
+    text-transform: capitalize;
+    margin-left: 3px;
+    font-weight: bold;
+    color: rgba(128, 128, 128);
+}
